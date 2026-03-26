@@ -4,22 +4,24 @@
    ============================================================ */
 
 /* ── RESET & VARIABLES ── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --bg:     #0a0a0a;
-  --card:   #111111;
-  --card2:  #141414;
-  --ink:    #f0ece4;
-  --muted:  #606060;
+  --bg: #0a0a0a;
+  --card: #111111;
+  --card2: #141414;
+  --ink: #f0ece4;
+  --muted: #606060;
   --subtle: #888882;
   --accent: #00e5a0;
-  --line:   #1e1e1e;
-  --deep:   #0d0d0d;
+  --line: #1e1e1e;
+  --deep: #0d0d0d;
 }
 
 html {
@@ -38,7 +40,9 @@ body {
 /* ── NAV ── */
 nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -570,7 +574,7 @@ section {
 }
 
 .contact-section .section-number {
-  color: #151515;
+  color: #9fc08d;
 }
 
 .contact-section .section-title {
@@ -672,6 +676,7 @@ footer {
     opacity: 0;
     transform: translateY(18px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -725,6 +730,7 @@ footer {
     border-bottom: 1px solid var(--line);
     font-size: 11px;
   }
+
   .nav-links.open a:hover {
     color: var(--accent);
   }
